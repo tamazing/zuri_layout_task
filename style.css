@@ -1,15 +1,65 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+/* Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  /* font-family:sans; */
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+body{
+    margin: auto;
+    height: 100vh;
+    vertical-align: middle;
+    background-color: #000;
 }
-a{
-    text-decoration: none;
-    font-size: 32px;
-    color: orangered;
+main {
+  margin: 0 auto;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.left,
+.middle,
+.right {
+  width: 30%;
+  height: 80%;
+  padding: 30px;
+  color: hsl(0, 0%, 90%);
+}
+.left {
+  background-color: hsl(31, 77%, 52%);
+}
+.middle {
+  background-color: hsl(184, 100%, 22%);
+}
+.right {
+  background-color: hsl(179, 100%, 13%);
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+/* svg{
+    border:hsla(0, 0%, 100%, 0.75)
+} */
+button {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+}
+button:hover {
+  background-color: none;
+  border: hsl(0, 0%, 90%);
 }
