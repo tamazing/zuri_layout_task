@@ -12,12 +12,27 @@
   /* font-family:sans; */
 }
 
-body{
-    margin: auto;
-    height: 100vh;
-    vertical-align: middle;
-    background-color: #000;
+body {
+  margin: auto;
+  height: 100vh;
+  background-color: #000;
 }
+nav ul {
+  width: 100wv;
+  height: 100px;
+  background-color: black;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 32px;
+  color: #fff;
+}
+
 main {
   margin: 0 auto;
   width: 900px;
@@ -31,35 +46,72 @@ main {
 .left,
 .middle,
 .right {
-  width: 30%;
-  height: 80%;
-  padding: 30px;
+  width: 25%;
+  height: 65%;
+  padding: 40px;
   color: hsl(0, 0%, 90%);
 }
 .left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: hsl(31, 77%, 52%);
 }
 .middle {
   background-color: hsl(184, 100%, 22%);
 }
 .right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: hsl(179, 100%, 13%);
 }
+
 h2 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 20px;
 }
-/* svg{
-    border:hsla(0, 0%, 100%, 0.75)
-} */
+p {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.514);
+}
 button {
-  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 7px 12px;
   text-align: center;
   background-color: #fff;
   border: none;
   border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
-button:hover {
-  background-color: none;
-  border: hsl(0, 0%, 90%);
+#left_btn {
+  color: hsl(31, 77%, 52%);
+}
+#middle_btn {
+  color: hsl(184, 100%, 22%);
+}
+#rigth_btn {
+  color: hsl(179, 100%, 13%);
+}
+
+#left_btn:hover {
+  color: #fff;
+  background-color: hsl(31, 77%, 52%);
+  border: 1px solid hsl(0, 0%, 90%);
+  cursor: pointer;
+}
+
+#middle_btn:hover {
+  color: #fff;
+  background-color: hsl(184, 100%, 22%);
+  border: 1px solid hsl(0, 0%, 90%);
+  cursor: pointer;
+}
+
+#right_btn:hover {
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+  border: 1px solid hsl(0, 0%, 90%);
+  cursor: pointer;
 }
